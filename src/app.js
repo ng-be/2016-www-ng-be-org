@@ -12,6 +12,7 @@ import cConfigureAppState from 'components/configure-app-state/_build/index';
 import cConfigureAppPublicState from 'components/configure-app-public-state/_build/index';
 
 import cHomepage from 'components/homepage/_build/index';
+import cSpeakers from 'components/speakers/_build/index';
 
 
 /**************************************************************************
@@ -40,6 +41,7 @@ cConfigureAppState(ngModule, { baseUrl: 'components/configure-app-state' });
 cConfigureAppPublicState(ngModule, { baseUrl: 'components/configure-app-public-state' });
 
 cHomepage(ngModule, { baseUrl: '/components/homepage' });
+cSpeakers(ngModule, { baseUrl: '/components/speakers' });
 
 /**************************************************************************
  * Guidelines
