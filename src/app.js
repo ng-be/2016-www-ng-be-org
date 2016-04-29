@@ -12,6 +12,7 @@ import cConfigureAppState from 'components/configure-app-state/_build/index';
 import cConfigureAppPublicState from 'components/configure-app-public-state/_build/index';
 
 import cHomepage from 'components/homepage/_build/index';
+import cLocation from 'components/location/_build/index';
 import cSpeakers from 'components/speakers/_build/index';
 import cSponsors from 'components/sponsors/_build/index';
 import cWorkshops from 'components/workshops/_build/index';
@@ -43,6 +44,7 @@ cConfigureAppState(ngModule, { baseUrl: 'components/configure-app-state' });
 cConfigureAppPublicState(ngModule, { baseUrl: 'components/configure-app-public-state' });
 
 cHomepage(ngModule, { baseUrl: '/components/homepage' });
+cLocation(ngModule, { baseUrl: '/components/location' });
 cSpeakers(ngModule, { baseUrl: '/components/speakers' });
 cSponsors(ngModule, { baseUrl: '/components/sponsors' });
 cWorkshops(ngModule, { baseUrl: '/components/workshops' });
