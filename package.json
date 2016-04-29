@@ -53,6 +53,7 @@
     "dependencies": {
       "angular": "github:angular/bower-angular@^1.5.5",
       "angular-mocks": "github:angular/bower-angular-mocks@^1.5.5",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.18",
       "bootstrap-less": "github:distros/bootstrap-less@^3.3.9"
     },
     "devDependencies": {

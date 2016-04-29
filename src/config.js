@@ -17,10 +17,14 @@ System.config({
   "map": {
     "angular": "github:angular/bower-angular@1.5.5",
     "angular-mocks": "github:angular/bower-angular-mocks@1.5.5",
+    "angular-ui-router": "github:angular-ui/ui-router@0.2.18",
     "babel": "npm:babel-core@5.5.8",
     "babel-runtime": "npm:babel-runtime@5.5.8",
     "bootstrap-less": "github:distros/bootstrap-less@3.3.9",
     "core-js": "npm:core-js@0.9.18",
+    "github:angular-ui/ui-router@0.2.18": {
+      "angular": "github:angular/bower-angular@1.5.5"
+    },
     "github:angular/bower-angular-mocks@1.4.1": {
       "angular": "github:angular/bower-angular@1.5.5"
     },
