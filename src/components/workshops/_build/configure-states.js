@@ -11,7 +11,7 @@ export default function(ngModule, options){
 
     $stateProvider
       .state('app.public.workshops', {
-        url: '/',
+        url: '/workshops',
         views: {
           'content@': {
             templateUrl: options.baseUrl + '/workshops.html',

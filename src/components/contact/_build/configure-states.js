@@ -11,7 +11,7 @@ export default function(ngModule, options){
 
     $stateProvider
       .state('app.public.contact', {
-        url: '/',
+        url: '/contact',
         views: {
           'content@': {
             templateUrl: options.baseUrl + '/contact.html',

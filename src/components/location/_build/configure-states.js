@@ -11,7 +11,7 @@ export default function(ngModule, options){
 
     $stateProvider
       .state('app.public.location', {
-        url: '/',
+        url: '/location',
         views: {
           'content@': {
             templateUrl: options.baseUrl + '/location.html',

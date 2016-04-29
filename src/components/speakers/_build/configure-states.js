@@ -11,7 +11,7 @@ export default function(ngModule, options){
 
     $stateProvider
       .state('app.public.speakers', {
-        url: '/',
+        url: '/speakers',
         views: {
           'content@': {
             templateUrl: options.baseUrl + '/speakers.html',
