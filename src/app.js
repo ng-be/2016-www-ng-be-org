@@ -1,13 +1,26 @@
 import angular from 'angular';
+import 'angular-ui-router';
 import 'bootstrap-less/js/bootstrap';
-import infoComponent from 'components/info/_build/index';
+
+import cEnableHtml5Mode from 'components/enable-html5-mode/_build/index';
+import cScrollToTopOnStateChange from 'components/scroll-to-top-on-state-change/_build/index';
+import cHandleInvalidRoutes from 'components/handle-invalid-routes/_build/index';
+import cHandleExceptions from 'components/handle-exceptions/_build/index';
+import cHandleStateChangeErrors from 'components/handle-state-change-errors/_build/index';
+
+import cConfigureAppState from 'components/configure-app-state/_build/index';
+import cConfigureAppPublicState from 'components/configure-app-public-state/_build/index';
+
+import cHomepage from 'components/homepage/_build/index';
 
 
 /**************************************************************************
  * Define Angular application
  *************************************************************************/
 
-var ngModule = angular.module('app', []);
+var ngModule = angular.module('app', [
+  'ui.router'
+]);
 
 ngModule.run(function () {
   console.log('Angular bootstrapped!');
@@ -17,7 +30,16 @@ ngModule.run(function () {
  * Initialize components and pass component specific options
  *************************************************************************/
 
-infoComponent(ngModule, { baseUrl: '/components/info' });
+cEnableHtml5Mode(ngModule, { baseUrl: 'components/enable-html5-mode' });
+cScrollToTopOnStateChange(ngModule, { baseUrl: 'components/scroll-to-top-on-state-change' });
+cHandleInvalidRoutes(ngModule, { baseUrl: 'components/handle-invalid-routes' });
+cHandleExceptions(ngModule, { baseUrl: 'components/handle-exceptions' });
+cHandleStateChangeErrors(ngModule, { baseUrl: 'components/handle-state-change-errors' });
+
+cConfigureAppState(ngModule, { baseUrl: 'components/configure-app-state' });
+cConfigureAppPublicState(ngModule, { baseUrl: 'components/configure-app-public-state' });
+
+cHomepage(ngModule, { baseUrl: '/components/homepage' });
 
 /**************************************************************************
  * Guidelines
