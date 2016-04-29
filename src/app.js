@@ -13,6 +13,7 @@ import cConfigureAppPublicState from 'components/configure-app-public-state/_bui
 
 import cHomepage from 'components/homepage/_build/index';
 import cSpeakers from 'components/speakers/_build/index';
+import cSponsors from 'components/sponsors/_build/index';
 import cWorkshops from 'components/workshops/_build/index';
 
 
@@ -43,6 +44,7 @@ cConfigureAppPublicState(ngModule, { baseUrl: 'components/configure-app-public-s
 
 cHomepage(ngModule, { baseUrl: '/components/homepage' });
 cSpeakers(ngModule, { baseUrl: '/components/speakers' });
+cSponsors(ngModule, { baseUrl: '/components/sponsors' });
 cWorkshops(ngModule, { baseUrl: '/components/workshops' });
 
 /**************************************************************************
