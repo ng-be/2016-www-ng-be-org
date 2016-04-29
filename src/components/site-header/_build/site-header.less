@@ -6,16 +6,35 @@ header.site-header {
   background: #ffffff;
   position: relative;
 
-  a.navbar-brand{
-    padding: 15px 0;
-    margin-right: 20px;
-    img{
+  a.navbar-brand {
+    padding: 0;
+    margin: 25px 20px 0 0;
+    img {
       height: 45px;
     }
   }
 
-  .navbar-default .navbar-nav > li > a{
-    text-transform: uppercase;
+  .navbar-default {
+    margin-bottom: 8px;
+    .navbar-nav > li {
+      margin-top: 15px;
+      a {
+        text-transform: uppercase;
+        //padding-left: 20px;
+        //padding-right: 20px;
+      }
+    }
+
+    .navbar-toggle{
+      margin-top: 29px;
+      margin-right: 5px;
+    }
+  }
+
+  .btn-buy-tickets{
+    @media(min-width: @screen-sm-min){
+      margin-left: 25px;
+    }
   }
 
   // Animate hamburger
@@ -46,6 +65,5 @@ header.site-header {
     top: -6px;
     transform: rotate(-45deg);
   }
-
 
 }
