@@ -1,0 +1,66 @@
+@import '../../../_build/variables';
+
+footer.site-footer{
+
+  padding: @ng-be-size-l 0 @ng-be-size-s;
+  border-top: 1px solid @ng-be-border-color;
+  background: #ffffff;
+  margin: 0;
+
+  .summary{
+    padding: ((@ng-be-size-xxl + @ng-be-size-xl) / 2) 0;
+    background: #ffffff;
+    color: rgba(0,0,0,0.3);
+  }
+
+  h1{
+    font-size: 1.4rem;
+  }
+
+  ul.links {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      margin: @ng-be-size-xs 0 0 0;
+      a {
+        text-transform: uppercase;
+        color: @ng-be-link-color-secondary;
+      }
+      &.active {
+        color: @ng-be-link-color-primary;
+      }
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+
+  .callout{
+    padding: 0 @ng-be-size-m 0 0;
+    img{
+      height: 50px;
+    }
+  }
+
+  .site-footer__disclaimer{
+    color: rgba(255,255,255,0.9);
+    margin-top: @ng-be-size-l;
+    text-align: center;
+    font-size: 0.9rem;
+    >ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+        display: inline-block;
+        margin: 0 0 0 2rem;
+        padding: 0;
+        &:first-child{
+        margin-left: 0;
+      }
+      }
+    }
+  }
+
+}

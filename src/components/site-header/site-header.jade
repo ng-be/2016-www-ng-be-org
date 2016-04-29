@@ -1,0 +1,22 @@
+header.site-header
+
+    .container
+
+        nav.navbar.navbar-default
+            .navbar-header
+                button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse-01')
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(ui-sref="app.public.homepage")
+                    img(src="/assets/img/logo.svg", alt="NG-BE")
+            #navbar-collapse-01.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                ul.nav.navbar-nav.navbar-right
+                    li(ui-sref-active="active"): a(ui-sref="app.public.homepage") Home
+                    li(ui-sref-active="active"): a(ui-sref="app.public.speakers") Speakers
+                    li(ui-sref-active="active"): a(ui-sref="app.public.workshops") Workshops
+                    li(ui-sref-active="active"): a(ui-sref="app.public.sponsors") Sponsors
+                    li(ui-sref-active="active"): a(ui-sref="app.public.location") Location
+                    li(ui-sref-active="active"): a(ui-sref="app.public.contact") Contact
+                    li(ui-sref-active="active"): a.btn.btn-primary(ui-sref="app.public.contact") Buy tickets
