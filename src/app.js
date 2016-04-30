@@ -16,6 +16,7 @@ import cHomepage from 'components/homepage/_build/index';
 import cLocation from 'components/location/_build/index';
 import cSpeakers from 'components/speakers/_build/index';
 import cSponsors from 'components/sponsors/_build/index';
+import cTeam from 'components/team/_build/index';
 import cWorkshops from 'components/workshops/_build/index';
 
 
@@ -49,6 +50,7 @@ cHomepage(ngModule, { baseUrl: '/components/homepage' });
 cLocation(ngModule, { baseUrl: '/components/location' });
 cSpeakers(ngModule, { baseUrl: '/components/speakers' });
 cSponsors(ngModule, { baseUrl: '/components/sponsors' });
+cTeam(ngModule, { baseUrl: '/components/team' });
 cWorkshops(ngModule, { baseUrl: '/components/workshops' });
 
 /**************************************************************************
