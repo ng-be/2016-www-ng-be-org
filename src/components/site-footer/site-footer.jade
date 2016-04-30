@@ -11,11 +11,29 @@ footer.site-footer
 
                         img(src="/assets/img/logo.svg", alt="NG-BE")
 
-                        h1 NG-BE
-
                 .col-sm-8.col-sm-offset-1
 
                     .row
+
+                        .col-sm-4
+
+                            ul.links
+                                li(ui-sref-active="active"): a(ui-sref="app.public.homepage") Home
+                                li(ui-sref-active="active"): a(ui-sref="app.public.speakers") Speakers
+                                li(ui-sref-active="active"): a(ui-sref="app.public.workshops") Workshops
+
+
+                        .col-sm-4
+
+                            ul.links
+                                li(ui-sref-active="active"): a(ui-sref="app.public.sponsors") Sponsors
+                                li(ui-sref-active="active"): a(ui-sref="app.public.location") Location
+                                li(ui-sref-active="active"): a(ui-sref="app.public.team") Team
+
+                        .col-sm-4
+
+                            ul.links
+                                li: a(href="https://twitter.com/ngbeconf", target="_blank") @ngbeconf
 
 
     .site-footer__disclaimer
