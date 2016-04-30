@@ -11,7 +11,8 @@
     "eslint": "eslint ./src",
     "development-server": "NODE_ENV=development node index.js",
     "production-server": "NODE_ENV=production node index.js",
-    "browser-sync": "node browser-sync.js"
+    "browser-sync": "node browser-sync.js",
+    "deploy": "surge dist/ ng-be.surge.sh"
   },
   "keywords": [
     "angular",
