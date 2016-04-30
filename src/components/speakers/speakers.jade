@@ -1,7 +1,40 @@
 .page.page--speakers
 
-    section.section-hero
+    .speakers-intro
 
         .container
+            .row
+                .col-sm-6.col-sm-offset-3
+                    .text-center
+                        | The following speakers have already confirmed:
 
-            h1.speakers-hero-title Speakers
+    .speakers
+        .container
+            .row
+                .col-sm-8.col-sm-offset-2
+
+                    .speaker
+                        .row
+                            .col-sm-2
+                                .speaker__image
+                                    img(src="components/speakers/img/pascal-precht.jpg")
+                            .col-sm-10
+                                .speaker__name Pascal Precht
+                                .speaker__title Trainer at @thoughtram, Google Developer Expert
+                                .speaker__description Pascal is a front-end engineer and a Angular Developer Expert nominated by Google. He created the angular-translate module, is an Angular 2 contributor and also part of the Angular 2 Docs Authoring team.
+                                .speaker__links
+                                    .speaker-link
+                                        a(href="https://twitter.com/PascalPrecht", target="_blank") @PascalPrecht
+
+                    .speaker
+                        .row
+                            .col-sm-2
+                                .speaker__image
+                                    img(src="components/speakers/img/todd-motto.jpg")
+                            .col-sm-10
+                                .speaker__name Todd Motto
+                                .speaker__title Developer Advocate @Telerik. Founder of Voux, Google Developer Expert
+                                .speaker__description JavaScript, Angular, React, conference speaker. Developer Expert at Google, open source lover.
+                                .speaker__links
+                                    .speaker-link
+                                        a(href="https://twitter.com/toddmotto", target="_blank") @ToddMotto
