@@ -1,8 +1,46 @@
+mixin thumb(image, cssClass)
+    .location-image(class="#{cssClass}")
+        img(src="/components/location/img/#{image}")
+
 .page.page--location
 
     .location-hero
 
         .container
 
-            h1 Location
-            h3 Holiday Inn Gent Expo, Belgium
+            h1 Holiday Inn Gent Expo
+            h3 Maaltekouter 3 - 9051 Gent, Belgium
+
+    .location-more-info
+
+        .container
+            .row
+                .col-sm-5.col-sm-offset-1
+
+                    .text-right
+
+                        p Holiday Inn Gent Expo is conveniently located next to the E40 (Brussels-Ostend) and the E17 (Amsterdam-Paris) motorways.
+
+                        p Hop on the tram, 100 meters from Holiday Inn Gent Expo, for a 20-minute ride into historic Gent with its wealth of museums, medieval streets and 12th-century architecture. You can book a boat trip on the canal and sample locally brewed beer, or take a 30-minute drive to visit the cities of Brussels and Bruges.
+
+                        p All NG-BE tickets include free private car parking space.
+
+                .col-sm-5
+
+                    p: a(href="http://www.higentexpo.com", target="_blank") Visit the HI Gent Expo website
+                    p: a(href="https://www.google.be/maps/place/Holiday+Inn+Gent+Expo/@51.0260034,3.6874463,17z/data=!3m1!4b1!4m5!3m4!1s0x47c373cd0158df95:0xac18676eb1dbc0ac!8m2!3d51.0260034!4d3.689635", target="_blank") Locate HI Gent Expo on Google maps
+
+
+    .location-images
+        +thumb('41.jpg', 'location-image--33')
+        +thumb('42.jpg', 'location-image--33')
+        +thumb('43.jpg', 'location-image--33')
+        +thumb('89.jpg', 'location-image--25')
+        +thumb('92.jpg', 'location-image--25')
+        +thumb('100.jpg', 'location-image--25')
+        +thumb('196.jpg', 'location-image--25')
+        +thumb('211.jpg', 'location-image--100')
+        +thumb('35.jpg', 'location-image--100')
+
+
+
