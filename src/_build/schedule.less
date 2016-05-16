@@ -1,0 +1,30 @@
+.schedule-item{
+  display: flex;
+  justify-content: center;
+  &:first-of-type{
+    .schedule-item__time{
+      border-top: 1px solid @ng-be-yellow-dark;
+    }
+    .schedule-item__description{
+      border-top: 1px solid @ng-be-yellow-dark;
+    }
+  }
+}
+.schedule-item__time{
+  flex: 0 0 auto;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  background: @ng-be-yellow;
+  border-bottom: 1px solid @ng-be-yellow-dark;
+  border-left: 1px solid @ng-be-yellow-dark;
+}
+.schedule-item__description{
+  border-right: 1px solid @ng-be-yellow-dark;
+  border-bottom: 1px solid @ng-be-yellow-dark;
+  border-left: 1px solid @ng-be-yellow-dark;
+  flex: 0 0 40%;
+  padding: 19px 30px 15px 30px;
+  background: lighten(@ng-be-yellow, 25%);
+}
