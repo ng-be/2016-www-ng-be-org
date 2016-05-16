@@ -10,12 +10,12 @@ export default function(ngModule, options){
   function configureStates($stateProvider){
 
     $stateProvider
-      .state('app.public.workshops', {
-        url: '/workshops',
+      .state('app.public.workshopDay', {
+        url: '/workshop-day',
         views: {
           'content@': {
-            templateUrl: options.baseUrl + '/workshops.html',
-            controller: 'HomepageController'
+            templateUrl: options.baseUrl + '/workshop-day.html',
+            controller: 'WorkshopDayController'
           }
         }
       });
