@@ -7,17 +7,13 @@
             h1 Conference day
             h3 Gent, Belgium | 9 December 2016 | 08:30 - 17:00
 
-
-    .conference-day-intro
-
-        .container
-            .row
-                .col-sm-6.col-sm-offset-3
-                    .text-center
-                        | The following speakers have already confirmed:
-
     .conference-day-speakers
+
         .container
+
+            h1 Speakers
+            h2 The following speakers have already confirmed:
+
             .row
                 .col-sm-8.col-sm-offset-2
 
@@ -25,7 +21,7 @@
                         .row
                             .col-sm-2
                                 .speaker__image
-                                    img(src="components/speakers/img/pascal-precht.jpg")
+                                    img(src="components/conference-day/img/pascal-precht.jpg")
                             .col-sm-10
                                 .speaker__name Pascal Precht
                                 .speaker__title Trainer at @thoughtram, Google Developer Expert
@@ -38,7 +34,7 @@
                         .row
                             .col-sm-2
                                 .speaker__image
-                                    img(src="components/speakers/img/todd-motto.jpg")
+                                    img(src="components/conference-day/img/todd-motto.jpg")
                             .col-sm-10
                                 .speaker__name Todd Motto
                                 .speaker__title Developer Advocate @Telerik. Founder of Voux, Google Developer Expert
@@ -46,3 +42,16 @@
                                 .speaker__links
                                     .speaker-link
                                         a(href="https://twitter.com/toddmotto", target="_blank") @ToddMotto
+
+                    .speaker
+                        .row
+                            .col-sm-2
+                                .speaker__image
+                                    img(src="components/conference-day/img/angular.svg")
+                            .col-sm-10
+                                .speaker__name Surprise!
+                                .speaker__title Google
+                                .speaker__description We are thrilled to announce that the Angular team has promised to send 2 Angular Core Team members to NG-BE to talk about the latest developments in Angular land.
+                                .speaker__links
+                                    .speaker-link
+                                        a(href="https://twitter.com/angularjs", target="_blank") @angularjs
