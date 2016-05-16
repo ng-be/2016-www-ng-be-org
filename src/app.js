@@ -11,13 +11,13 @@ import cHandleStateChangeErrors from 'components/handle-state-change-errors/_bui
 import cConfigureAppState from 'components/configure-app-state/_build/index';
 import cConfigureAppPublicState from 'components/configure-app-public-state/_build/index';
 
+import cConferenceDay from 'components/conference-day/_build/index';
 import cContact from 'components/contact/_build/index';
 import cHomepage from 'components/homepage/_build/index';
 import cLocation from 'components/location/_build/index';
-import cSpeakers from 'components/speakers/_build/index';
 import cSponsors from 'components/sponsors/_build/index';
 import cTeam from 'components/team/_build/index';
-import cWorkshops from 'components/workshops/_build/index';
+import cWorkshopDay from 'components/workshop-day/_build/index';
 
 
 /**************************************************************************
@@ -45,13 +45,13 @@ cHandleStateChangeErrors(ngModule, { baseUrl: 'components/handle-state-change-er
 cConfigureAppState(ngModule, { baseUrl: 'components/configure-app-state' });
 cConfigureAppPublicState(ngModule, { baseUrl: 'components/configure-app-public-state' });
 
+cConferenceDay(ngModule, { baseUrl: '/components/conference-day' });
 cContact(ngModule, { baseUrl: '/components/contact' });
 cHomepage(ngModule, { baseUrl: '/components/homepage' });
 cLocation(ngModule, { baseUrl: '/components/location' });
-cSpeakers(ngModule, { baseUrl: '/components/speakers' });
 cSponsors(ngModule, { baseUrl: '/components/sponsors' });
 cTeam(ngModule, { baseUrl: '/components/team' });
-cWorkshops(ngModule, { baseUrl: '/components/workshops' });
+cWorkshopDay(ngModule, { baseUrl: '/components/workshop-day' });
 
 /**************************************************************************
  * Guidelines
