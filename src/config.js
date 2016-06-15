@@ -1,20 +1,18 @@
 System.config({
-  "baseURL": "/",
-  "transpiler": "babel",
-  "babelOptions": {
+  baseURL: "/",
+  defaultJSExtensions: true,
+  transpiler: "babel",
+  babelOptions: {
     "optional": [
       "runtime"
     ]
   },
-  "paths": {
-    "*": "*.js",
-    "github:*": "_jspm_packages/github/*.js",
-    "npm:*": "_jspm_packages/npm/*.js"
-  }
-});
+  paths: {
+    "github:*": "_jspm_packages/github/*",
+    "npm:*": "_jspm_packages/npm/*"
+  },
 
-System.config({
-  "map": {
+  map: {
     "angular": "github:angular/bower-angular@1.5.5",
     "angular-mocks": "github:angular/bower-angular-mocks@1.5.5",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.18",
@@ -23,9 +21,6 @@ System.config({
     "bootstrap-less": "github:distros/bootstrap-less@3.3.9",
     "core-js": "npm:core-js@0.9.18",
     "github:angular-ui/ui-router@0.2.18": {
-      "angular": "github:angular/bower-angular@1.5.5"
-    },
-    "github:angular/bower-angular-mocks@1.4.1": {
       "angular": "github:angular/bower-angular@1.5.5"
     },
     "github:angular/bower-angular-mocks@1.5.5": {
@@ -47,4 +42,3 @@ System.config({
     }
   }
 });
-

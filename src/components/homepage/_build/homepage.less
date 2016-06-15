@@ -1,78 +1,109 @@
 @import '../../../_build/variables';
 
-.page--homepage{
+.page--homepage {
 
-  .homepage-hero{
+  .homepage-hero {
     padding: 60px 0 30px 0;
     text-align: center;
 
-    h1{
+    @media (max-width: @screen-sm-min) {
+      padding: 30px 0 15px 0;
+    }
+
+    h1 {
       margin: 0 0 10px 0;
       padding: 0;
       font-weight: 700;
     }
-    h2{
+    h2 {
       margin: 0 0 10px 0;
       padding: 0;
       font-size: 1.6rem;
     }
-    h3{
+    h3 {
       margin: 0 0 10px 0;
       padding: 0;
       font-size: 1.3rem;
     }
   }
 
-  .homepage-organisers{
+  .homepage-organisers {
     background: white;
     padding: 30px 0;
-    h1{
+
+    @media (max-width: @screen-sm-min) {
+      padding: 15px 0;
+    }
+
+    h1 {
       text-align: center;
       margin-bottom: 60px;
+
+      @media (max-width: @screen-sm-min) {
+        margin-bottom: 30px;
+      }
+
     }
   }
 
-  .organiser{
+  .organiser {
     margin-bottom: 60px;
   }
 
-  .organiser__image{
-    img{
+  .organiser__image {
+    img {
       border-radius: 50%;
       border: 6px solid @ng-be-color-primary;
       width: 100%;
     }
   }
 
-  .organiser__name{
+  .organiser__name {
     font-size: 1.4rem;
   }
 
-  .organiser__title{
+  .organiser__title {
     font-style: italic;
     margin-bottom: 10px;
   }
 
-  .organiser__title{
+  .organiser__title {
     font-style: italic;
     margin-bottom: 10px;
   }
 
-  .homepage-schedule{
+  .homepage-schedule {
     padding: 0 0 60px 0;
-    h1{
+    h1 {
       text-align: center;
       margin-bottom: 60px;
     }
+
+    @media (max-width: @screen-sm-min) {
+      padding: 0 0 30px 0;
+    }
+
   }
 
-  .schedule-day__title{
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2rem;
+  .schedule-day {
+
+    &__title {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.2rem;
+    }
+
+    &-workshop {
+      margin-bottom: 30px;
+    }
+
+    @media (max-width: @screen-sm-min) {
+      text-align: center;
+    }
+
   }
 
-  .schedule-day__date{
+  .schedule-day__date {
     margin-bottom: 10px;
   }
 

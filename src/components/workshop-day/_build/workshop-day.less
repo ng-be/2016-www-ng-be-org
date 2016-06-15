@@ -1,97 +1,106 @@
 @import '../../../_build/variables';
 
-.page--workshop-day{
+.page--workshop-day {
 
-  .workshop{
+  .workshop {
     margin-bottom: 45px;
+
+    @media (max-width: @screen-sm-min) {
+      text-align: center;
+    }
+
   }
 
-  .workshop-day-hero{
+  .workshop-day-hero {
     padding: 60px 0;
     text-align: center;
 
-    h1{
+    @media (max-width: @screen-sm-min) {
+      padding: 30px 0 15px 0;
+    }
+
+    h1 {
       margin: 0 0 10px 0;
       padding: 0;
       font-weight: 700;
     }
-    h2{
+    h2 {
       margin: 0 0 10px 0;
       padding: 0;
       font-size: 1.6rem;
     }
-    h3{
+    h3 {
       margin: 0;
       padding: 0;
       font-size: 1.3rem;
     }
   }
 
-  .workshop-day-intro{
+  .workshop-day-intro {
     margin-bottom: 60px;
   }
 
-  .workshop-day-workshops{
+  .workshop-day-workshops {
 
   }
 
-  .workshop-trainers{
+  .workshop-trainers {
     margin-bottom: 45px;
   }
 
-  .workshop__title{
+  .workshop__title {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.2rem;
   }
 
-  .workshop__date{
+  .workshop__date {
     margin-bottom: 10px;
   }
 
-  .workshop-schedule{
+  .workshop-schedule {
     margin: 0 0 60px 0;
   }
 
-  h1.workshop-section-title{
+  h1.workshop-section-title {
     font-size: 1.4rem;
     margin-bottom: 15px;
   }
 
-  .trainer{
+  .trainer {
     margin-bottom: 30px;
   }
 
-  .trainer__image{
-    img{
+  .trainer__image {
+    img {
       border-radius: 50%;
       border: 6px solid @ng-be-color-primary;
       width: 100%;
     }
   }
 
-  .trainer__name{
+  .trainer__name {
     font-weight: bold;
   }
 
-  .trainer__title{
+  .trainer__title {
     font-style: italic;
     margin-bottom: 10px;
   }
 
-  .workshop-day-buy{
+  .workshop-day-buy {
     background: white;
     padding: 30px 0 60px 0;
     text-align: center;
-    h1{
+    h1 {
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       margin-bottom: 30px;
       font-size: 1.1rem;
     }
-    a.btn{
-      color: rgba(0,0,0,0.6);
+    a.btn {
+      color: rgba(0, 0, 0, 0.6);
     }
   }
 
