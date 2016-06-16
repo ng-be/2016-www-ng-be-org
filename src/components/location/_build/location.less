@@ -1,57 +1,68 @@
 @import '../../../_build/variables';
 
-.page--location{
+.page--location {
 
-  .location-hero{
+  .location-hero {
     padding: 60px 0;
     text-align: center;
 
-    h1{
+    @media (max-width: @screen-sm-min) {
+      padding: 30px 0;
+    }
+
+    h1 {
       margin: 0 0 10px 0;
       padding: 0;
       font-weight: 700;
     }
-    h2{
+    h2 {
       margin: 0 0 10px 0;
       padding: 0;
       font-size: 1.6rem;
     }
-    h3{
+    h3 {
       margin: 0;
       padding: 0;
       font-size: 1.3rem;
     }
   }
 
-  .location-more-info{
+  .location-more-info {
     margin-bottom: 45px;
+    @media (max-width: @screen-sm-min) {
+
+      text-align: center;
+      .text-right {
+        text-align: center;
+      }
+    }
   }
 
-  .location-images{
+  .location-images {
     display: flex;
     flex-wrap: wrap;
-    img{
+    img {
       width: 100%;
     }
   }
 
-  .location-image{
+  .location-image {
     flex: 1 0 300px;
   }
 
-  .location-image--25{
+  .location-image--25 {
     flex: 1 0 25%;
   }
 
-  .location-image--33{
+  .location-image--33 {
     flex: 1 0 33%;
   }
 
-  .location-image--50{
+  .location-image--50 {
     flex: 1 0 50%;
   }
 
-  .location-image--100{
+  .location-image--100 {
     flex: 1 0 100%;
   }
 

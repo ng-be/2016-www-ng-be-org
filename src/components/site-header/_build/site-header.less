@@ -9,21 +9,48 @@ header.site-header {
   a.navbar-brand {
     padding: 0;
     margin: 25px 20px 0 0;
+
+    @media (max-width: @screen-sm-min) {
+      margin-top:15px;
+    }
+
     img {
       height: 45px;
     }
+
   }
 
   .navbar-default {
     margin-bottom: 8px;
-    .navbar-nav{
-      li{
+
+    @media (max-width: @screen-sm-min) {
+      margin-bottom: 0;
+    }
+
+    .navbar-nav {
+
+      @media (max-width: @screen-sm-min) {
+        margin-top: 0;
+      }
+
+      li {
         margin-top: 15px;
+
+        @media (max-width: @screen-sm-min) {
+          margin-top:5px;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
         a {
           text-transform: uppercase;
+          @media (max-width: @screen-sm-min) {
+            padding-right: 0;
+            padding-left: 0;
+          }
         }
-        &.active{
-          a{
+        &.active {
+          a {
             color: @ng-be-red;
             font-weight: bold;
           }
@@ -31,14 +58,19 @@ header.site-header {
       }
     }
 
-    .navbar-toggle{
+    .navbar-toggle {
       margin-top: 29px;
       margin-right: 5px;
+
+      @media (max-width: @screen-sm-min) {
+        margin-top:20px;
+      }
+
     }
   }
 
-  .btn-buy-tickets{
-    @media(min-width: @screen-sm-min){
+  .btn-buy-tickets {
+    @media (min-width: @screen-sm-min) {
       margin-left: 25px;
     }
   }
