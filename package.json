@@ -13,7 +13,7 @@
     "production-server": "NODE_ENV=production node index.js",
     "browser-sync": "node browser-sync.js",
     "deploy": "firebase deploy",
-    "ci-deploy-to-surge": "surge dist/ angularcodereview.com",
+    "ci-deploy-to-surge": "surge dist/ ng-be.surge.sh",
     "ci-deploy-to-firebase": "firebase deploy --token ${FIREBASE_TOKEN}"
   },
   "keywords": [
