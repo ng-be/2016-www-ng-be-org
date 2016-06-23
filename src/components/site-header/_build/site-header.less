@@ -42,6 +42,9 @@ header.site-header {
             margin-top: 0;
           }
         }
+        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+          font-size: 0.85rem;
+        }
         a {
           text-transform: uppercase;
           @media (max-width: @screen-sm-min) {
@@ -72,6 +75,9 @@ header.site-header {
   .btn-buy-tickets {
     @media (min-width: @screen-sm-min) {
       margin-left: 25px;
+    }
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      font-size: 0.85rem;
     }
   }
 
