@@ -11,7 +11,7 @@ header.site-header {
     margin: 25px 20px 0 0;
 
     @media (max-width: @screen-sm-min) {
-      margin-top:15px;
+      margin-top: 15px;
     }
 
     img {
@@ -37,7 +37,7 @@ header.site-header {
         margin-top: 15px;
 
         @media (max-width: @screen-sm-min) {
-          margin-top:5px;
+          margin-top: 5px;
           &:first-child {
             margin-top: 0;
           }
@@ -50,6 +50,20 @@ header.site-header {
           @media (max-width: @screen-sm-min) {
             padding-right: 0;
             padding-left: 0;
+          }
+          &.btn {
+            background: #fae042;
+            &:hover {
+              color: #595f6e;
+              background-color: #f9d810;
+              border-color: #dfc106;
+            }
+            &.active {
+              background-color: #f9d810;
+              border-color: #dfc106;
+              color: #595f6e;
+              box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            }
           }
         }
         &.active {
@@ -66,7 +80,7 @@ header.site-header {
       margin-right: 5px;
 
       @media (max-width: @screen-sm-min) {
-        margin-top:20px;
+        margin-top: 20px;
       }
 
     }
