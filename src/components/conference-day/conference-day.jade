@@ -22,10 +22,24 @@
             h1 Speakers
             h2 The following speakers have already confirmed:
 
+            ul.quicklinks
+                li
+                    a(ui-sref="app.public.conferenceDay({'#': 'pascal-precht'})") Pascal Precht
+                li
+                    a(ui-sref="app.public.conferenceDay({'#': 'todd-moto'})") Todd Moto
+                li
+                    a(ui-sref="app.public.conferenceDay({'#': 'minko-gechev'})") Minko Gechev
+                li
+                    a(ui-sref="app.public.conferenceDay({'#': 'gerard-sans'})") Gerard Sans
+                li
+                    a(ui-sref="app.public.conferenceDay({'#': 'tero-parviainen'})") Tero Parviainen
+                li
+                    a(ui-sref="app.public.conferenceDay({'#': 'pawel-kozlowski'})") Pawel Kozlowski
+
             .row
                 .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
 
-                    .speaker
+                    .speaker#pascal-precht
                         .row
                             .col-xs-3
                                 .speaker__image
@@ -38,7 +52,7 @@
                                     .speaker-link
                                         a(href="https://twitter.com/PascalPrecht", target="_blank") @PascalPrecht
 
-                    .speaker
+                    .speaker#todd-moto
                         .row
                             .col-xs-3
                                 .speaker__image
@@ -51,7 +65,7 @@
                                     .speaker-link
                                         a(href="https://twitter.com/toddmotto", target="_blank") @ToddMotto
 
-                    .speaker
+                    .speaker#minko-gechev
                         .row
                             .col-xs-3
                                 .speaker__image
@@ -64,7 +78,7 @@
                                     .speaker-link
                                         a(href="https://twitter.com/mgechev", target="_blank") @mgechev
 
-                    .speaker
+                    .speaker#gerard-sans
                         .row
                             .col-xs-3
                                 .speaker__image
@@ -77,7 +91,7 @@
                                     .speaker-link
                                         a(href="https://twitter.com/gerardsans", target="_blank") @gerardsans
 
-                    .speaker
+                    .speaker#tero-parviainen
                         .row
                             .col-xs-3
                                 .speaker__image
@@ -90,7 +104,7 @@
                                     .speaker-link
                                         a(href="https://twitter.com/teropa", target="_blank") @teropa
 
-                    .speaker
+                    .speaker#pawel-kozlowski
                         .row
                             .col-xs-3
                                 .speaker__image

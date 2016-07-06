@@ -1,8 +1,8 @@
 @import '../../../_build/variables';
 
-.page--conference-day{
+.page--conference-day {
 
-  .conference-day-hero{
+  .conference-day-hero {
     padding: 60px 0;
     text-align: center;
 
@@ -10,130 +10,154 @@
       padding: 30px 0 15px 0;
     }
 
-    h1{
+    h1 {
       margin: 0 0 10px 0;
       padding: 0;
       font-weight: 700;
     }
-    h2{
+    h2 {
       margin: 0 0 10px 0;
       padding: 0;
       font-size: 1.6rem;
     }
-    h3{
+    h3 {
       margin: 0;
       padding: 0;
       font-size: 1.3rem;
     }
   }
 
-  .conference-day-intro{
+  .conference-day-intro {
     margin-bottom: 60px;
 
     @media (max-width: @screen-sm-min) {
-      margin-bottom:30px;
+      margin-bottom: 30px;
     }
 
   }
 
-  .conference-day-speakers{
+  .conference-day-speakers {
     background: white;
     padding: 30px 0;
-    h1{
+    h1 {
       text-align: center;
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       text-align: center;
-      margin-bottom: 60px;
-      font-size: 1.1rem;
-    }
-  }
-
-  .conference-day-schedule{
-    padding: 30px 0 60px 0;
-    h1{
-      text-align: center;
-      margin-bottom: 15px;
-    }
-    h2{
-      text-align: center;
-      margin-bottom: 60px;
-      font-size: 1.1rem;
-    }
-  }
-
-  .conference-day-buy{
-    background: white;
-    padding: 30px 0 60px 0;
-    text-align: center;
-    h1{
-      margin-bottom: 15px;
-    }
-    h2{
       margin-bottom: 30px;
       font-size: 1.1rem;
     }
-    a.btn{
-      color: rgba(0,0,0,0.6);
+
+    ul.quicklinks {
+      max-width: 450px;
+      margin: 0 auto 20px auto;
+      padding: 0 0 30px 0;
+      list-style: none;
+      text-align: center;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+      li {
+        display: inline-block;
+        text-align: center;
+        margin: 10px 10px;
+
+        a {
+          padding: 5px 10px;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          background: #fae042;
+          color: #595f6e;
+        }
+
+      }
     }
   }
 
-  .conference-day-buy-2{
+  .conference-day-schedule {
+    padding: 30px 0 60px 0;
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+      font-size: 1.1rem;
+    }
+  }
+
+  .conference-day-buy {
+    background: white;
+    padding: 30px 0 60px 0;
+    text-align: center;
+    h1 {
+      margin-bottom: 15px;
+    }
+    h2 {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+    }
+    a.btn {
+      color: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .conference-day-buy-2 {
     background: white;
     padding: 60px 0 60px 0;
     text-align: center;
-    a.btn{
-      color: rgba(0,0,0,0.6);
+    a.btn {
+      color: rgba(0, 0, 0, 0.6);
     }
   }
 
-  .conference-ticket-includes{
+  .conference-ticket-includes {
     padding: 30px 0 60px 0;
     text-align: center;
-    h1{
+    h1 {
       margin-bottom: 15px;
     }
-    h2{
+    h2 {
       margin-bottom: 30px;
       font-size: 1.1rem;
     }
-    h3{
+    h3 {
       margin-bottom: 10px;
       font-size: 1.1rem;
     }
-    .row + .row{
+    .row + .row {
       margin-top: 15px;
     }
   }
 
-  .included-item{
+  .included-item {
     padding: 0 15px;
   }
 
-
-  .speaker{
-    margin-bottom: 60px;
+  .speaker {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
-  .speaker__image{
-    img{
+  .speaker__image {
+    img {
       border-radius: 50%;
       border: 6px solid @ng-be-color-primary;
       width: 100%;
     }
   }
 
-  .speaker__name{
+  .speaker__name {
     font-size: 1.4rem;
   }
 
-  .speaker__title{
+  .speaker__title {
     font-style: italic;
     margin-bottom: 10px;
   }
 
-  .speaker__description{
+  .speaker__description {
     margin-bottom: 10px;
   }
 
