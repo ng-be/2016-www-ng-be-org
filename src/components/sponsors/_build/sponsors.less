@@ -29,7 +29,7 @@
 
   .sponsors-list {
     background: #fff;
-    padding: 40px 0;
+    padding: 60px 0;
     h3 {
       text-align: center;
       margin-bottom: 20px;
@@ -44,27 +44,36 @@
 
     .sponsors-list-platinum {
       h3 {
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 30px;
+        margin: 0 0 45px 0;
       }
     }
 
     .sponsors-list-gold {
       h3 {
         font-size: 24px;
+        margin: 0 0 45px 0;
       }
     }
 
     .sponsors-list-silver {
       h3 {
-        font-size: 20px;
+        font-size: 24px;
+        margin: 0 0 45px 0;
+      }
+    }
+
+    .sponsors-list-bronze {
+      h3 {
+        font-size: 24px;
+        margin: 0 0 45px 0;
       }
     }
 
     .sponsor {
       a {
-        border-radius: 500px;
-        background: #f6f6f6;
+        border-radius: 50%;
+        background: white;
         border: 1px solid #ddd;
         display: block;
         min-height: 100px;
@@ -72,7 +81,8 @@
         position: relative;
         img {
           display: block;
-          width: 100%;
+          margin: 0 auto;
+          width: 90%;
           -webkit-transition: all 1s ease-in-out;
           -moz-transition: all 1s ease-in-out;
           -o-transition: all 1s ease-in-out;
@@ -99,15 +109,6 @@
             margin-top: -21px;
           }
         }
-
-        &:hover {
-          img {
-            opacity: 0.3;
-          }
-          span {
-            display: block;
-          }
-        }
       }
       p {
         text-align: center;
@@ -117,6 +118,17 @@
       &.open {
         h2 {
           font-weight: normal;
+        }
+        a{
+          background: #f6f6f6;
+        }
+        &:hover {
+          img {
+            opacity: 0.3;
+          }
+          span {
+            display: block;
+          }
         }
       }
     }
@@ -136,6 +148,10 @@
     a.btn {
       color: rgba(0, 0, 0, 0.6);
     }
+  }
+
+  .section-sponsors{
+    margin: 0 0 90px 0;
   }
 
 }
