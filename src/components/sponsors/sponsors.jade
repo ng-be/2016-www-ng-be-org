@@ -6,187 +6,113 @@
 
             h1 Sponsors
             h3 Sponsors make NG-BE possible so make sure to check out their website
+            p: a.btn.btn-default(href="mailto:info@ng-be.org?subject=Request sponsor pack") Request sponsorship information
 
-    .sponsors-list
 
-        .section-sponsors.section-sponsors--platinum
+    .sponsor-section.sponsor-section--platinum
 
-            .container
+        h1 Platinum sponsor
 
-                .row.sponsors-list-platinum
+        .sponsor
+            .row
+                .col-xs-3
+                    .sponsor__image
+                        img(src="components/sponsors/img/question.png", alt="")
+                .col-xs-9
+                    .sponsor__name Your company?
+                    .sponsor__description
+                        p Do you want to be at the top of this awesome list of sponsors? There is only one platinum sponsor position available so act now!
+                        p: a(href="mailto:info@ng-be.org?subject=Request platinum sponsor pack", target="_blank") Request sponsorship information
 
-                    h3 Platinum sponsor
+    .sponsor-section.sponsor-section--gold
 
-                .row.sponsors-list-platinum.open
+        h1 Gold sponsors
 
-                    .col-xsm-4.col-sm-4.col-md-2.col-xsm-offset-4.col-sm-offset-4.col-md-offset-5.sponsor
+        .sponsor
+            .row
+                .col-xs-3
+                    .sponsor__image
+                        a(href="https://www.arhs-group.com/arhs-developments-belgium", target="_blank")
+                            img(src="components/sponsors/img/arhs_dev.png", alt="ARHS Developments")
+                .col-xs-9
+                    .sponsor__name ARHS Developments
+                    .sponsor__description
+                        p Arηs Developments Belgium is a Belgian company incorporated in 2006. Arηs Developments Belgium is a subsidiary of Arηs Developments.
+                        p: a(href="https://www.arhs-group.com/arhs-developments-belgium", target="_blank") Visit website
 
-                        a(href='mailto:info@ng-be.org?subject=Request platinum sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-                        p We are still looking for a platinum sponsor.
+    .sponsor-section.sponsor-section--silver
 
-        .section-sponsors.section-sponsors--gold
+        h1 Silver sponsors
 
-            .container
+        .sponsor
+            .row
+                .col-xs-3
+                    .sponsor__image
+                        a(href="http://www.realdolmen.com/", target="_blank")
+                            img(src="components/sponsors/img/realdolmen.png", alt="RealDolmen")
+                .col-xs-9
+                    .sponsor__name RealDolmen
+                    .sponsor__description
+                        p RealDolmen is not a standard ICT company. ICT companies almost always focus on and depart from technology. RealDolmen focuses in the 1st place on the result that its customers can achieve and works towards the technological part.
+                        p: a(href="http://www.realdolmen.com/", target="_blank") Visit Website
 
-                .row.sponsors-list-gold
+    .sponsor-section.sponsor-section--bronze
 
-                    h3 Gold sponsors
+        h1 Bronze sponsors
 
-                .row.sponsors-list-gold
+        .sponsor
+            .row
+                .col-xs-3
+                    .sponsor__image
+                        a(href="http://www.showpad.com", target="_blank")
+                            img(src="components/sponsors/img/showpad.jpg", alt="Showpad")
+                .col-xs-9
+                    .sponsor__name Showpad
+                    .sponsor__description
+                        p Founded in 2011, Showpad activates the content of over 850 companies around the world, including Johnson & Johnson, Fujifilm, Audi, Intel, and Kimberly-Clark.
+                        p: a(href="http://www.showpad.com", target="_blank") Visit Website
 
-                    .col-sm-4.col-md-2.col-md-offset-3.sponsor.open
+        .sponsor
+            .row
+                .col-xs-3
+                    .sponsor__image
+                        a(href="https://www.webtrix.be", target="_blank")
+                            img(src="components/sponsors/img/webtrix-logo-square.svg", alt="Webtrix")
+                .col-xs-9
+                    .sponsor__name Webtrix
+                    .sponsor__description
+                        p Webtrix is specialized in making custom webshops and websites since 2011.
+                        p: a(href="https://www.webtrix.be", target="_blank") Visit Website
 
-                        a(href='mailto:info@ng-be.org?subject=Request gold sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-                        p We are still looking for some gold sponsors.
+        .sponsor
+            .row
+                .col-xs-4.col-sm-3
+                    .sponsor__image
+                        a(href="http://www.ctg.com", target="_blank")
+                            img(src="components/sponsors/img/ctg.png", alt="CTG")
+                .col-xs-8.col-sm-9
+                    .sponsor__name CTG
+                    .sponsor__description
+                        p CTG is the most reliable IT services provider, built on 50 years of meeting our commitments to make technology work for our clients and deliver real business value.
+                        p: a(href="http://www.ctg.com", target="_blank") Visit Website
 
-                    .col-sm-4.col-md-2.sponsor
-
-                            a(href='https://www.arhs-group.com/arhs-developments-belgium', target='_blank')
-                                img(src='components/sponsors/img/arhs_dev.png', alt='ARHS Developments')
-                            h2 ARHS Developments
-
-                    .col-sm-4.col-md-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request gold sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-                        p We are still looking for some gold sponsors.
-
-        .section-sponsors.section-sponsors--silver
-
-            .container
-
-                .row.sponsors-list-silver
-
-                    h3 Silver sponsors
-
-                .row.sponsors-list-silver
-
-                    .col-sm-2.col-sm-offset-1.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request silver sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request silver sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor
-
-                        a(href='http://www.realdolmen.com/', target='_blank')
-                            img(src='components/sponsors/img/realdolmen.png', alt='RealDolmen')
-                            span Visit website
-                        h2 RealDolmen
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request silver sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request silver sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-        .section-sponsors.section-sponsors--bronze
-
-            .container
-
-                .row.sponsors-list-bronze
-
-                    h3 Bronze sponsors
-
-                .row.sponsors-list-bronze
-
-                    .col-sm-2.sponsor.col-sm-offset-1
-
-                        a(href='https://www.combell.com/en/', target='_blank')
-                            img(src='components/sponsors/img/combell.png', alt='Combell')
-                        h2 Combell
-
-                    .col-sm-2.sponsor
-
-                        a(href='http://www.ctg.com', target='_blank')
-                            img(src='components/sponsors/img/ctg.png', alt='CTG')
-                        h2 CTG
-
-                    .col-sm-2.sponsor
-
-                        a(href='http://www.showpad.com', target='_blank')
-                            img(src='components/sponsors/img/showpad.jpg', alt='Showpad')
-                        h2 Showpad
-
-                    .col-sm-2.sponsor
-
-                        a(href='https://www.webtrix.be', target='_blank')
-                            img(src='components/sponsors/img/webtrix-logo-square.svg', alt='Webtrix')
-                        h2 Webtrix
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request Bronze sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                .row.sponsors-list-bronze
-
-                    .col-sm-2.sponsor.open.col-sm-offset-1
-
-                        a(href='mailto:info@ng-be.org?subject=Request Bronze sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request Bronze sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request Bronze sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request Bronze sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
-
-                    .col-sm-2.sponsor.open
-
-                        a(href='mailto:info@ng-be.org?subject=Request Bronze sponsor pack', target='_blank')
-                            img(src='components/sponsors/img/question.png', alt='')
-                            span Apply here
-                        h2 Open sponsor-slot
+        .sponsor
+            .row
+                .col-xs-4.col-sm-3
+                    .sponsor__image
+                        a(href="https://www.combell.com/en/", target="_blank")
+                            img(src="components/sponsors/img/combell.png", alt="Combell")
+                .col-xs-8.col-sm-9
+                    .sponsor__name Combell
+                    .sponsor__description
+                        p Since 1999, Combell is the absolute market leader in hosting services for companies, IT integrators and software developers and became the most reliable one-stop partner to host about any IT infrastructure, website or application.
+                        p: a(href="https://www.combell.com/en/", target="_blank") Visit Website
 
     .sponsors-call-for-sponsorship
 
         .container
 
-            h1 Want to become a sponsor?
-            h2 We offer unique benefits to sponsors that help support NG-BE.
+            h1 Do you want to join this awesome list of sponsors?
+            h2 Sponsorship packages start at a very low price and offer unique benefits.
 
-            a.btn.btn-primary.btn-lg(href="mailto:info@ng-be.org?subject=Request sponsor pack") Request a sponsor pack
+            a.btn.btn-primary(href="mailto:info@ng-be.org?subject=Request sponsor pack") Request sponsorship information
