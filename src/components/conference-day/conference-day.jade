@@ -24,6 +24,8 @@
 
             ul.quicklinks
                 li
+                    a(ui-sref="app.public.conferenceDay({'#': 'igor-minar'})") Igor Minar
+                li
                     a(ui-sref="app.public.conferenceDay({'#': 'pascal-precht'})") Pascal Precht
                 li
                     a(ui-sref="app.public.conferenceDay({'#': 'todd-moto'})") Todd Moto
@@ -40,6 +42,19 @@
 
             .row
                 .col-sm-8.col-sm-offset-2.col-md-6.col-md-offset-3
+
+                    .speaker#igor-minar
+                        .row
+                            .col-xs-3
+                                .speaker__image
+                                    img(src="components/conference-day/img/igor-minar.jpg")
+                            .col-xs-9
+                                .speaker__name Igor Minar
+                                .speaker__title Angular Team Lead at Google
+                                .speaker__description Igor is a lead on the Angular project, practitioner of test driven development, open source enthusiast and hacker. In his free time, Igor enjoys spending time with his wife and two kids, doing outdoor activities.
+                                .speaker__links
+                                    .speaker-link
+                                        a(href="https://twitter.com/IgorMinar", target="_blank") @IgorMinar
 
                     .speaker#pascal-precht
                         .row
@@ -131,26 +146,6 @@
                                 .speaker__links
                                     .speaker-link
                                         a(href="https://twitter.com/ManfredSteyer", target="_blank") @ManfredSteyer
-
-                    .speaker
-                        .row
-                            .col-xs-3
-                                .speaker__image
-                                    img(src="components/conference-day/img/angular.svg")
-                            .col-xs-9
-                                .speaker__name Surprise!
-                                .speaker__title Google
-                                .speaker__description We are thrilled to announce that the Angular team has promised to send 2 Angular Core Team members to NG-BE to talk about the latest developments in Angular land.
-                                .speaker__links
-                                    .speaker-link
-                                        a(href="https://twitter.com/angularjs", target="_blank") @angularjs
-
-                    .speaker
-                        .row
-                            .col-xs-3
-                            .col-xs-9
-                                .speaker__name Stay tuned!
-                                .speaker__description More speakers will be announced soon!
 
     .conference-day-schedule
 
