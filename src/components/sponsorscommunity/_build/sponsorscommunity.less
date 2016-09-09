@@ -6,15 +6,22 @@
 
   h1 {
     text-align: center;
+    margin-bottom: 30px;
   }
   h2 {
     text-align: center;
+    margin-bottom: 30px;
   }
   p {
     text-align: center;
+    margin-top: 15px;
+  }
+  a.btn {
+    color: #595f6e;
   }
 
   .compartner {
+
     @media (min-width: 768px) and (max-width: 991px) {
       &.col-sm-offset-1point5 {
         margin-left: 10.416666667%;
@@ -23,18 +30,19 @@
 
     a {
       display: block;
-      padding: 20px;
       box-sizing: border-box;
-      border-radius: 50px;
       img {
         display: block;
         width: 100%;
-
+        background: #fff;
+        border-radius: 100px;
+        box-sizing: border-box;
+        padding: 20px;
       }
     }
-    &.round{
-      a{
-        img{
+    &.round {
+      a {
+        img {
           border-radius: 100px;
         }
       }
