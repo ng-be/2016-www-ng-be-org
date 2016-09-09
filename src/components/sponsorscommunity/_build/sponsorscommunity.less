@@ -1,0 +1,43 @@
+@import '../../../_build/variables';
+
+.community {
+
+  padding: 30px 0;
+
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+
+  .compartner {
+    @media (min-width: 768px) and (max-width: 991px) {
+      &.col-sm-offset-1point5 {
+        margin-left: 10.416666667%;
+      }
+    }
+
+    a {
+      display: block;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 50px;
+      img {
+        display: block;
+        width: 100%;
+
+      }
+    }
+    &.round{
+      a{
+        img{
+          border-radius: 100px;
+        }
+      }
+    }
+  }
+}
