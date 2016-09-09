@@ -12,3 +12,8 @@ before_script:
 after_success:
   - npm run ci-deploy-to-surge
   - npm run ci-deploy-to-firebase
+
+# only listen to changes in master
+branches:
+  only:
+  - master
