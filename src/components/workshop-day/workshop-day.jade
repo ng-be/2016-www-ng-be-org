@@ -14,23 +14,24 @@
 
                     .text-center There are 2 workshops the day before the conference. Please bring your own laptop and note that workshop tickets are sold separately.
 
-    .workshop-day-workshops
+    .workshop-day-workshop.workshop-day-workshop--one
 
-        .container
+        .workshop-heading
+            .workshop-heading__intro Workshop 1
+            .workshop-heading__title Angular 2 Workshop by Thoughtram
+            .workshop-heading__date 8 December 2016 | 07:30 - 17:30
+            .workshop-heading__tickets-left Only 7 tickets left
+            .workshop-heading__buy
+                a.btn.btn-default(href="https://ti.to/ng-be/ng-be-2016/") Buy tickets
 
-            .row
-                .col-sm-5.col-sm-offset-1
+        .workshop-trainers
 
-                    .workshop.text-right
-                        .workshop__title One-day Angular 2 workshop by Thoughtram
-                        .workshop__date Training room 1
-                        .workshop__description
-                            p Only 18 tickets left
-                            a.btn.btn-default(href="https://ti.to/ng-be/ng-be-2016/") Buy tickets
+            .container
 
-                    h1.workshop-section-title.text-right Trainer
+                .workshop-section-title Trainers
 
-                    .workshop-trainers
+                .row
+                    .col-sm-6
 
                         .trainer.text-right
                             .row
@@ -44,9 +45,30 @@
                                     .trainer__image
                                         img(src="components/workshop-day/img/pascal-precht.jpg")
 
-                    h1.workshop-section-title.text-right Schedule
+                    .col-sm-6
 
-                    .workshop-schedule
+                        .trainer
+                            .row
+                                .col-xs-4.col-sm-3
+                                    .trainer__image
+                                        img(src="components/workshop-day/img/dominic-elm.jpg")
+
+                                .col-xs-8.col-sm-9
+                                    .trainer__name Dominic Elm
+                                    .trainer__title Frontend Engineer at team neusta GmbH
+                                    .trainer__links
+                                        .trainer-link
+                                            a(href="https://twitter.com/elmd_", target="_blank") @elmd_
+
+
+
+        .workshop-schedule
+
+            .container
+                .row
+                    .col-sm-8.col-sm-offset-2
+
+                        .workshop-section-title Schedule
 
                         .schedule-items
 
@@ -104,34 +126,61 @@
                                 .schedule-item__description
                                     p End
 
-                .col-sm-5
 
-                    .workshop
-                        .workshop__title Reactive applications with Angular 2, RXJS and @ngrx
-                        .workshop__date Training room 2
-                        .workshop__description
-                            p Only 13 tickets left
-                            a.btn.btn-default(href="https://ti.to/ng-be/ng-be-2016/") Buy tickets
+    .workshop-day-workshop.workshop-day-workshop--two
 
-                    h1.workshop-section-title Trainer
+        .workshop-heading
+            .workshop-heading__intro Workshop 2
+            .workshop-heading__title Reactive applications with Angular 2, RXJS and @ngrx
+            .workshop-heading__date 8 December 2016 | 07:30 - 17:30
+            .workshop-heading__tickets-left Only 9 tickets left
+            .workshop-heading__buy
+                a.btn.btn-default(href="https://ti.to/ng-be/ng-be-2016/") Buy tickets
 
-                    .workshop-trainers
+        .workshop-trainers
 
-                        .trainer
+            .container
+
+                .workshop-section-title Trainers
+
+                .row
+                    .col-sm-6
+
+                        .trainer.text-right
                             .row
-                                .col-xs-4.col-sm-3
-                                    .trainer__image
-                                        img(src="components/workshop-day/img/brecht-billiet.jpg")
                                 .col-xs-8.col-sm-9
                                     .trainer__name Brecht Billiet
                                     .trainer__title Frontend software architect
                                     .trainer__links
                                         .trainer-link
                                             a(href="https://twitter.com/brechtbilliet", target="_blank") @brechtbilliet
+                                .col-xs-4.col-sm-3
+                                    .trainer__image
+                                        img(src="components/workshop-day/img/brecht-billiet.jpg")
 
-                    h1.workshop-section-title Schedule
+                    .col-sm-6
 
-                    .workshop-schedule
+                        .trainer
+                            .row
+                                .col-xs-4.col-sm-3
+                                    .trainer__image
+                                        img(src="components/workshop-day/img/kwinten-pisman.jpg")
+
+                                .col-xs-8.col-sm-9
+                                    .trainer__name Kwinten Pisman
+                                    .trainer__title Frontend software architect
+                                    .trainer__links
+                                        .trainer-link
+                                            a(href="https://twitter.com/KwintenP", target="_blank") @KwintenP
+
+
+        .workshop-schedule
+
+            .container
+                .row
+                    .col-sm-8.col-sm-offset-2
+
+                        .workshop-section-title Schedule
 
                         .schedule-items
 
