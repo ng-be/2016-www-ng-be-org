@@ -33,6 +33,7 @@ var ngModule = angular.module('app', [
 
 ngModule.run(function () {
   console.log('Angular bootstrapped!');
+  console.log('Hmmm there seems to be a twitter link to the wrong conference on this website, can you find it?');
 });
 
 /**************************************************************************
