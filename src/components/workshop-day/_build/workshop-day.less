@@ -2,15 +2,6 @@
 
 .page--workshop-day {
 
-  .workshop {
-    margin-bottom: 45px;
-
-    @media (max-width: @screen-sm-min) {
-      text-align: center;
-    }
-
-  }
-
   .workshop-day-hero {
     padding: 60px 0;
     text-align: center;
@@ -36,39 +27,68 @@
     }
   }
 
+  .workshop-heading{
+    text-align: center;
+    margin: 0 0 45px 0;
+    background: @ng-be-yellow;
+    padding: 30px 15px 40px 15px;
+    .workshop-heading__intro{
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin: 0 0 15px 0;
+      color: rgba(0,0,0,0.4);
+    }
+    .workshop-heading__title{
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+    }
+    .workshop-heading__date{
+      margin: 0 0 15px 0;
+    }
+    .workshop-heading__tickets-left{
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      display: inline-block;
+      background: @ng-be-red;
+      color: white;
+      padding: 6px 8px;
+      line-height: 1em;
+    }
+    .workshop-heading__buy{
+
+    }
+  }
+
   .workshop-day-intro {
     margin-bottom: 60px;
   }
 
   .workshop-day-workshops {
-
+    h1.workshop-section-title{
+      margin-bottom: 30px;
+      @media(max-width: @screen-xs-max){
+        text-align: center;
+      }
+    }
   }
 
   .workshop-trainers {
     margin-bottom: 45px;
   }
 
-  .workshop__title {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.2rem;
-  }
-
-  .workshop__date {
-    margin-bottom: 10px;
-  }
-
   .workshop-schedule {
     margin: 0 0 60px 0;
   }
 
-  h1.workshop-section-title {
+  .workshop-section-title {
     font-size: 1.4rem;
-    margin-bottom: 15px;
+    margin: 0 0 30px 0;
+    text-align: center;
   }
 
   .trainer {
-    margin-bottom: 30px;
   }
 
   .trainer__image {
@@ -76,6 +96,17 @@
       border-radius: 50%;
       border: 6px solid @ng-be-color-primary;
       width: 100%;
+      max-width: 120px;
+    }
+    @media(max-width: @screen-xs-max){
+      text-align: right;
+    }
+  }
+  .trainer.text-right{
+    .trainer__image {
+      @media(max-width: @screen-xs-max){
+        text-align: left;
+      }
     }
   }
 
