@@ -1,0 +1,64 @@
+@import '../../../_build/variables';
+
+.ribbon-container {
+  overflow: hidden;
+  position: absolute;
+  right: 0px;
+  width: 150px;
+  height: 150px;
+
+  @media (max-width: @screen-md-min) {
+    bottom: 0;
+    position:fixed;
+    z-index:200;
+  }
+
+  .ribbon {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform-origin: 0 100%;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .12), 0 1px 6px 0 rgba(0, 0, 0, .12);
+    background-color: @ng-be-red;
+    color: white;
+    height: 34px;
+    width: 200px;
+    top: -34px;
+    transform: rotateZ(45deg);
+    line-height: 28px;
+    right: -58.57864376269px;
+    -webkit-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    -o-transform: rotateZ(45deg);
+    -ms-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    z-index: 1000;
+
+    @media (max-width: @screen-md-min) {
+      top: 145px;
+      right: -85px;
+      -webkit-transform: rotateZ(315deg);
+      -moz-transform: rotateZ(315deg);
+      -o-transform: rotateZ(315deg);
+      -ms-transform: rotateZ(315deg);
+      transform: rotateZ(315deg);
+    }
+  }
+
+  .ribbon:before {
+    content: '';
+    height: 3px;
+    display: block;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.4);
+  }
+
+  .ribbon:after {
+    content: '';
+    height: 3px;
+    display: block;
+    border-top: 1px dashed rgba(255, 255, 255, 0.4);
+  }
+}
