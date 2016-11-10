@@ -1,0 +1,62 @@
+@import '../../../_build/variables';
+
+.jobboard {
+
+  padding: 30px 0;
+  background: white;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+}
+
+.company-logo {
+
+  position: relative;
+  margin-bottom: 20px;
+
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    &.col-sm-offset-1point5 {
+      margin-left: 10.416666667%;
+    }
+  }
+
+  a {
+    display: block;
+    box-sizing: border-box;
+    img {
+      display: block;
+      width: 100%;
+      background: #fff;
+      border-radius: 100px;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+  }
+  &.community-logo--round {
+    a {
+      img {
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+.row {
+
+  margin: 30px 0;
+
+  h3 {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+}
