@@ -13,6 +13,12 @@
     padding-left: 1.2rem;
   }
 }
+.schedule-item__talk{
+  &:extend(.schedule-item);
+  .schedule-item__description{
+    background: lighten(@ng-be-yellow, 25%);
+  }
+}
 .schedule-item__time{
   flex: 0 0 auto;
   text-align: right;
@@ -29,6 +35,5 @@
   border-left: 1px solid @ng-be-yellow-dark;
   flex: 1 0 40%;
   padding: 21px 30px 15px 30px;
-  background: lighten(@ng-be-yellow, 25%);
-  word-break: break-all;
+  background: lighten(@ng-be-yellow, 35%);
 }
