@@ -161,7 +161,7 @@
     margin-bottom: 10px;
   }
 
-  .conference-day-angular-air{
+  .conference-day-angular-air {
     background: white;
     padding: 60px 0 60px 0;
     text-align: center;
@@ -177,4 +177,70 @@
     }
   }
 
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: center;
+  &:first-of-type {
+    .schedule-item__time {
+      border-top: 1px solid @ng-be-yellow-dark;
+    }
+    .schedule-item__description {
+      border-top: 1px solid @ng-be-yellow-dark;
+    }
+  }
+  ul {
+    padding-left: 1.2rem;
+  }
+}
+
+.schedule-item__talk {
+  &:extend(.schedule-item);
+  .schedule-item__description {
+    background: lighten(@ng-be-yellow, 25%);
+  }
+}
+
+.schedule-item__time {
+  flex: 0 0 auto;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 15px 30px;
+  background: @ng-be-yellow;
+  border-bottom: 1px solid @ng-be-yellow-dark;
+  border-left: 1px solid @ng-be-yellow-dark;
+}
+
+.schedule-item__description {
+  border-right: 1px solid @ng-be-yellow-dark;
+  border-bottom: 1px solid @ng-be-yellow-dark;
+  border-left: 1px solid @ng-be-yellow-dark;
+  flex: 1 0 40%;
+  padding: 21px 30px 15px 30px;
+  background: lighten(@ng-be-yellow, 35%);
+}
+
+.schedule-item__youtube {
+  background: url('components/conference-day/img/youtube.svg') no-repeat;
+  background-size: 24px 24px;
+  background-position: 0 -3px;
+  height: 17px;
+  padding-left: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 17px;
+  a {
+    text-decoration: none;
+    color: #595f6f;
+    border-bottom: 1px dotted #595f6f;
+    &:active{
+      text-decoration: none;
+    }
+    &:hover {
+      border-bottom: 1px solid #595f6f;
+      text-decoration: none;
+    }
+  }
 }
